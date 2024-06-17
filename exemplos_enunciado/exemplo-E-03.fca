@@ -1,0 +1,7 @@
+valor1 = 111;
+valor2 = 20;
+SE valor1 <= valor2 || 1 == 1:
+    ESCREVER("Menor");
+SENAO:
+    ESCREVER("Maior ou igual");
+FIM

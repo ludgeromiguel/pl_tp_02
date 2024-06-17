@@ -1,0 +1,7 @@
+valor1 = 20;
+valor2 = 20;
+SE valor1 < valor2:
+    ESCREVER("Menor");
+SENAOSE NEG valor1 < valor2:
+    ESCREVER("Maior ou igual");
+FIM

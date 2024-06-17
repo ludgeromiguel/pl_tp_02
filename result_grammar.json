@@ -1,0 +1,1662 @@
+{
+    "ESCREVER(\"ola mundo!\");": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "escrever",
+                "args": [
+                    {
+                        "op": "string",
+                        "args": [
+                            "ola mundo!"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "ESCREVER(\"PL \" <> 2 <> \"o ano de\" <> \"ESI\");": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "escrever",
+                "args": [
+                    {
+                        "op": "concat",
+                        "args": [
+                            {
+                                "op": "string",
+                                "args": [
+                                    "PL "
+                                ]
+                            },
+                            {
+                                "op": "concat",
+                                "args": [
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "2"
+                                        ]
+                                    },
+                                    {
+                                        "op": "concat",
+                                        "args": [
+                                            {
+                                                "op": "string",
+                                                "args": [
+                                                    "o ano de"
+                                                ]
+                                            },
+                                            {
+                                                "op": "string",
+                                                "args": [
+                                                    "ESI"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "ESCREVER(\"soma de \" <> 9 <> \"com \" <> 3*4 <> \"=\" <> 9+2*3);": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "escrever",
+                "args": [
+                    {
+                        "op": "concat",
+                        "args": [
+                            {
+                                "op": "string",
+                                "args": [
+                                    "soma de "
+                                ]
+                            },
+                            {
+                                "op": "concat",
+                                "args": [
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "9"
+                                        ]
+                                    },
+                                    {
+                                        "op": "concat",
+                                        "args": [
+                                            {
+                                                "op": "string",
+                                                "args": [
+                                                    "com "
+                                                ]
+                                            },
+                                            {
+                                                "op": "concat",
+                                                "args": [
+                                                    {
+                                                        "op": "*",
+                                                        "args": [
+                                                            {
+                                                                "op": "int",
+                                                                "args": [
+                                                                    "3"
+                                                                ]
+                                                            },
+                                                            {
+                                                                "op": "int",
+                                                                "args": [
+                                                                    "4"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "op": "concat",
+                                                        "args": [
+                                                            {
+                                                                "op": "string",
+                                                                "args": [
+                                                                    "="
+                                                                ]
+                                                            },
+                                                            {
+                                                                "op": "+",
+                                                                "args": [
+                                                                    {
+                                                                        "op": "int",
+                                                                        "args": [
+                                                                            "9"
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "op": "*",
+                                                                        "args": [
+                                                                            {
+                                                                                "op": "int",
+                                                                                "args": [
+                                                                                    "2"
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "op": "int",
+                                                                                "args": [
+                                                                                    "3"
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "FUNCAO teste(a, b) ,: a+b;": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "funcao",
+                "args": [
+                    "teste",
+                    [
+                        {
+                            "var": "a"
+                        },
+                        {
+                            "var": "b"
+                        }
+                    ],
+                    {
+                        "op": "+",
+                        "args": [
+                            {
+                                "var": "a"
+                            },
+                            {
+                                "var": "b"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "FUNCAO soma2(c) :\nc = c+1 ;\nc+1 ;\nFIM": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "funcao",
+                "args": [
+                    "soma2",
+                    [
+                        {
+                            "var": "c"
+                        }
+                    ],
+                    {
+                        "op": "seq",
+                        "args": [
+                            {
+                                "op": "atribuicao",
+                                "args": [
+                                    "c",
+                                    {
+                                        "op": "+",
+                                        "args": [
+                                            {
+                                                "var": "c"
+                                            },
+                                            {
+                                                "op": "int",
+                                                "args": [
+                                                    "1"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "op": "+",
+                                "args": [
+                                    {
+                                        "var": "c"
+                                    },
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "1"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "nome=\"diogo\", idade=10;": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "seq",
+                "args": [
+                    {
+                        "op": "atribuicao",
+                        "args": [
+                            "nome",
+                            {
+                                "op": "string",
+                                "args": [
+                                    "diogo"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "op": "atribuicao",
+                        "args": [
+                            "idade",
+                            {
+                                "op": "int",
+                                "args": [
+                                    "10"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "FUNCAO soma(a,b) ,: a+b ;\nFUNCAO soma2(c) :\nc = c+1 ;\nc+1 ;\nFIM\nseis = soma(4,2);\noito = soma2(seis);": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "funcao",
+                "args": [
+                    "soma",
+                    [
+                        {
+                            "var": "a"
+                        },
+                        {
+                            "var": "b"
+                        }
+                    ],
+                    {
+                        "op": "+",
+                        "args": [
+                            {
+                                "var": "a"
+                            },
+                            {
+                                "var": "b"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "funcao",
+                "args": [
+                    "soma2",
+                    [
+                        {
+                            "var": "c"
+                        }
+                    ],
+                    {
+                        "op": "seq",
+                        "args": [
+                            {
+                                "op": "atribuicao",
+                                "args": [
+                                    "c",
+                                    {
+                                        "op": "+",
+                                        "args": [
+                                            {
+                                                "var": "c"
+                                            },
+                                            {
+                                                "op": "int",
+                                                "args": [
+                                                    "1"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "op": "+",
+                                "args": [
+                                    {
+                                        "var": "c"
+                                    },
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "1"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "atribuicao",
+                "args": [
+                    "seis",
+                    {
+                        "op": "call_func",
+                        "args": [
+                            "soma",
+                            [
+                                {
+                                    "op": "int",
+                                    "args": [
+                                        "4"
+                                    ]
+                                },
+                                {
+                                    "op": "int",
+                                    "args": [
+                                        "2"
+                                    ]
+                                }
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "atribuicao",
+                "args": [
+                    "oito",
+                    {
+                        "op": "call_func",
+                        "args": [
+                            "soma2",
+                            [
+                                {
+                                    "var": "seis"
+                                }
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "ESCREVER(\"Ola, \"<> curso); -- Ola, ESI": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "escrever",
+                "args": [
+                    {
+                        "op": "concat",
+                        "args": [
+                            {
+                                "op": "string",
+                                "args": [
+                                    "Ola, "
+                                ]
+                            },
+                            {
+                                "var": "curso"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "comentario",
+                "args": [
+                    "Ola, ESI"
+                ]
+            }
+        ]
+    },
+    "{- exemplo interpola\u00e7\u00e3o de strings\nOl\u00e1, EST IPCA! -}\nescola =\"EST\";\ninst = \"IPCA\";\nESCREVER (\"Ol\u00e1, #{escola} #{inst}!\");": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "comentario",
+                "args": [
+                    "exemplo interpola\u00e7\u00e3o de strings\nOl\u00e1, EST IPCA!"
+                ]
+            },
+            {
+                "op": "atribuicao",
+                "args": [
+                    "escola",
+                    {
+                        "op": "string",
+                        "args": [
+                            "EST"
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "atribuicao",
+                "args": [
+                    "inst",
+                    {
+                        "op": "string",
+                        "args": [
+                            "IPCA"
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "escrever",
+                "args": [
+                    {
+                        "op": "interpolacao",
+                        "args": [
+                            {
+                                "op": "string",
+                                "args": [
+                                    "Ol\u00e1, "
+                                ]
+                            },
+                            {
+                                "var": "escola"
+                            },
+                            {
+                                "op": "string",
+                                "args": [
+                                    " "
+                                ]
+                            },
+                            {
+                                "var": "inst"
+                            },
+                            {
+                                "op": "string",
+                                "args": [
+                                    "!"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "FUNCAO area(a,b),: a*b ;\nFUNCAO area(c),: area(c, c);\nd = area(10, 20);\ne = area(30);": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "funcao",
+                "args": [
+                    "area",
+                    [
+                        {
+                            "var": "a"
+                        },
+                        {
+                            "var": "b"
+                        }
+                    ],
+                    {
+                        "op": "*",
+                        "args": [
+                            {
+                                "var": "a"
+                            },
+                            {
+                                "var": "b"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "funcao",
+                "args": [
+                    "area",
+                    [
+                        {
+                            "var": "c"
+                        }
+                    ],
+                    {
+                        "op": "call_func",
+                        "args": [
+                            "area",
+                            [
+                                {
+                                    "var": "c"
+                                },
+                                {
+                                    "var": "c"
+                                }
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "atribuicao",
+                "args": [
+                    "d",
+                    {
+                        "op": "call_func",
+                        "args": [
+                            "area",
+                            [
+                                {
+                                    "op": "int",
+                                    "args": [
+                                        "10"
+                                    ]
+                                },
+                                {
+                                    "op": "int",
+                                    "args": [
+                                        "20"
+                                    ]
+                                }
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "atribuicao",
+                "args": [
+                    "e",
+                    {
+                        "op": "call_func",
+                        "args": [
+                            "area",
+                            [
+                                {
+                                    "op": "int",
+                                    "args": [
+                                        "30"
+                                    ]
+                                }
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "FUNCAO fib( 0 ),: 0 ;\nFUNCAO fib( 1 ),: 0 ;\nFUNCAO fib( n ):\na = fib(n-1);\nb = fib(n-2);\na + b;\nFIM\nfib5 = fib(5);": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "funcao",
+                "args": [
+                    "fib",
+                    [
+                        {
+                            "op": "int",
+                            "args": [
+                                "0"
+                            ]
+                        }
+                    ],
+                    {
+                        "op": "int",
+                        "args": [
+                            "0"
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "funcao",
+                "args": [
+                    "fib",
+                    [
+                        {
+                            "op": "int",
+                            "args": [
+                                "1"
+                            ]
+                        }
+                    ],
+                    {
+                        "op": "int",
+                        "args": [
+                            "0"
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "funcao",
+                "args": [
+                    "fib",
+                    [
+                        {
+                            "var": "n"
+                        }
+                    ],
+                    {
+                        "op": "seq",
+                        "args": [
+                            {
+                                "op": "atribuicao",
+                                "args": [
+                                    "a",
+                                    {
+                                        "op": "call_func",
+                                        "args": [
+                                            "fib",
+                                            [
+                                                {
+                                                    "op": "-",
+                                                    "args": [
+                                                        {
+                                                            "var": "n"
+                                                        },
+                                                        {
+                                                            "op": "int",
+                                                            "args": [
+                                                                "1"
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "op": "atribuicao",
+                                "args": [
+                                    "b",
+                                    {
+                                        "op": "call_func",
+                                        "args": [
+                                            "fib",
+                                            [
+                                                {
+                                                    "op": "-",
+                                                    "args": [
+                                                        {
+                                                            "var": "n"
+                                                        },
+                                                        {
+                                                            "op": "int",
+                                                            "args": [
+                                                                "2"
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "op": "+",
+                                "args": [
+                                    {
+                                        "var": "a"
+                                    },
+                                    {
+                                        "var": "b"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "atribuicao",
+                "args": [
+                    "fib5",
+                    {
+                        "op": "call_func",
+                        "args": [
+                            "fib",
+                            [
+                                {
+                                    "op": "int",
+                                    "args": [
+                                        "5"
+                                    ]
+                                }
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "lista = [ 1, 2, 3 ] ;\nESCREVER( lista ); -- [1,2,3];\nvazia = [] ;\nlista_str = [\"teste\"];": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "atribuicao",
+                "args": [
+                    "lista",
+                    {
+                        "op": "elementos_array",
+                        "args": [
+                            {
+                                "op": "int",
+                                "args": [
+                                    "1"
+                                ]
+                            },
+                            {
+                                "op": "int",
+                                "args": [
+                                    "2"
+                                ]
+                            },
+                            {
+                                "op": "int",
+                                "args": [
+                                    "3"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "escrever",
+                "args": [
+                    {
+                        "var": "lista"
+                    }
+                ]
+            },
+            {
+                "op": "comentario",
+                "args": [
+                    "[1,2,3];"
+                ]
+            },
+            {
+                "op": "atribuicao",
+                "args": [
+                    "vazia",
+                    []
+                ]
+            },
+            {
+                "op": "atribuicao",
+                "args": [
+                    "lista_str",
+                    {
+                        "op": "elementos_array",
+                        "args": [
+                            {
+                                "op": "string",
+                                "args": [
+                                    "teste"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "FUNCAO mais2( x ),: x + 2 ;\nFUNCAO soma( a, b ),: a + b ;\nlista1 = map( mais2, [] );\nlista2 = map( mais2, [ 1, 2, 3 ] );\nlista3 = fold( soma, [ 1, 2, 3 ], 0 );": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "funcao",
+                "args": [
+                    "mais2",
+                    [
+                        {
+                            "var": "x"
+                        }
+                    ],
+                    {
+                        "op": "+",
+                        "args": [
+                            {
+                                "var": "x"
+                            },
+                            {
+                                "op": "int",
+                                "args": [
+                                    "2"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "funcao",
+                "args": [
+                    "soma",
+                    [
+                        {
+                            "var": "a"
+                        },
+                        {
+                            "var": "b"
+                        }
+                    ],
+                    {
+                        "op": "+",
+                        "args": [
+                            {
+                                "var": "a"
+                            },
+                            {
+                                "var": "b"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "atribuicao",
+                "args": [
+                    "lista1",
+                    {
+                        "op": "map",
+                        "args": [
+                            "mais2",
+                            []
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "atribuicao",
+                "args": [
+                    "lista2",
+                    {
+                        "op": "map",
+                        "args": [
+                            "mais2",
+                            {
+                                "op": "elementos_array",
+                                "args": [
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "1"
+                                        ]
+                                    },
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "2"
+                                        ]
+                                    },
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "3"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "atribuicao",
+                "args": [
+                    "lista3",
+                    {
+                        "op": "fold",
+                        "args": [
+                            "soma",
+                            {
+                                "op": "elementos_array",
+                                "args": [
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "1"
+                                        ]
+                                    },
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "2"
+                                        ]
+                                    },
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "3"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "op": "int",
+                                "args": [
+                                    "0"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "array = [1, 2, 3];": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "atribuicao",
+                "args": [
+                    "array",
+                    {
+                        "op": "elementos_array",
+                        "args": [
+                            {
+                                "op": "int",
+                                "args": [
+                                    "1"
+                                ]
+                            },
+                            {
+                                "op": "int",
+                                "args": [
+                                    "2"
+                                ]
+                            },
+                            {
+                                "op": "int",
+                                "args": [
+                                    "3"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "FUNCAO somatorio( [] ),: 0 ;FUNCAO somatorio( x:xs ),: x + somatorio(xs) ;": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "funcao",
+                "args": [
+                    "somatorio",
+                    [
+                        {
+                            "op": "array_vazio",
+                            "args": []
+                        }
+                    ],
+                    {
+                        "op": "int",
+                        "args": [
+                            "0"
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "funcao",
+                "args": [
+                    "somatorio",
+                    [
+                        {
+                            "op": "var_id_array",
+                            "args": [
+                                "x",
+                                "xs"
+                            ]
+                        }
+                    ],
+                    {
+                        "op": "+",
+                        "args": [
+                            {
+                                "var": "x"
+                            },
+                            {
+                                "op": "call_func",
+                                "args": [
+                                    "somatorio",
+                                    [
+                                        {
+                                            "var": "xs"
+                                        }
+                                    ]
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "SE var1 == var2: \nESCREVER(\"OLA\");\nSENAOSE var1 != var2:\nESCREVER(\"OLA2\");\nFIM": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "se",
+                "args": [
+                    {
+                        "op": "==",
+                        "args": [
+                            {
+                                "var": "var1"
+                            },
+                            {
+                                "var": "var2"
+                            }
+                        ]
+                    },
+                    {
+                        "op": "seq",
+                        "args": [
+                            {
+                                "op": "escrever",
+                                "args": [
+                                    {
+                                        "op": "string",
+                                        "args": [
+                                            "OLA"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "op": "senao_se",
+                        "args": [
+                            {
+                                "op": "!=",
+                                "args": [
+                                    {
+                                        "var": "var1"
+                                    },
+                                    {
+                                        "var": "var2"
+                                    }
+                                ]
+                            },
+                            {
+                                "op": "seq",
+                                "args": [
+                                    {
+                                        "op": "escrever",
+                                        "args": [
+                                            {
+                                                "op": "string",
+                                                "args": [
+                                                    "OLA2"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "SE var1 == var2: \nESCREVER(\"OLA\");\nFIM": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "se",
+                "args": [
+                    {
+                        "op": "==",
+                        "args": [
+                            {
+                                "var": "var1"
+                            },
+                            {
+                                "var": "var2"
+                            }
+                        ]
+                    },
+                    {
+                        "op": "seq",
+                        "args": [
+                            {
+                                "op": "escrever",
+                                "args": [
+                                    {
+                                        "op": "string",
+                                        "args": [
+                                            "OLA"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "SE NEG var1 == var2: \nESCREVER(\"OLA\");\nSENAOSE NEG var1 != var2:\nESCREVER(\"OLA2\");\nSENAO: var1 = 2 \nFIM": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "se",
+                "args": [
+                    {
+                        "op": "==",
+                        "args": [
+                            {
+                                "op": "neg",
+                                "args": [
+                                    {
+                                        "var": "var1"
+                                    }
+                                ]
+                            },
+                            {
+                                "var": "var2"
+                            }
+                        ]
+                    },
+                    {
+                        "op": "seq",
+                        "args": [
+                            {
+                                "op": "escrever",
+                                "args": [
+                                    {
+                                        "op": "string",
+                                        "args": [
+                                            "OLA"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "op": "senao_se",
+                        "args": [
+                            {
+                                "op": "!=",
+                                "args": [
+                                    {
+                                        "op": "neg",
+                                        "args": [
+                                            {
+                                                "var": "var1"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "var": "var2"
+                                    }
+                                ]
+                            },
+                            {
+                                "op": "seq",
+                                "args": [
+                                    {
+                                        "op": "escrever",
+                                        "args": [
+                                            {
+                                                "op": "string",
+                                                "args": [
+                                                    "OLA2"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "op": "senao",
+                        "args": [
+                            {
+                                "op": "seq",
+                                "args": [
+                                    {
+                                        "op": "seq",
+                                        "args": [
+                                            {
+                                                "op": "atribuicao",
+                                                "args": [
+                                                    "var1",
+                                                    {
+                                                        "op": "int",
+                                                        "args": [
+                                                            "2"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "SE NEG var1 == var2: \nESCREVER(\"OLA\");\nFIM": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "se",
+                "args": [
+                    {
+                        "op": "==",
+                        "args": [
+                            {
+                                "op": "neg",
+                                "args": [
+                                    {
+                                        "var": "var1"
+                                    }
+                                ]
+                            },
+                            {
+                                "var": "var2"
+                            }
+                        ]
+                    },
+                    {
+                        "op": "seq",
+                        "args": [
+                            {
+                                "op": "escrever",
+                                "args": [
+                                    {
+                                        "op": "string",
+                                        "args": [
+                                            "OLA"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "valor = ENTRADA();": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "atribuicao",
+                "args": [
+                    "valor",
+                    {
+                        "op": "entrada",
+                        "args": []
+                    }
+                ]
+            }
+        ]
+    },
+    "ate10 = ALEATORIO(10);": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "atribuicao",
+                "args": [
+                    "ate10",
+                    {
+                        "op": "aleatorio",
+                        "args": [
+                            "10"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "\n            FUNCAO soma(a,b),: a+b ;\n            FUNCAO soma2(c) :\n                c = c+1 ;\n                c+1 ;\n            FIM\n            seis = soma(4,2);\n            oito = soma2(seis);": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "funcao",
+                "args": [
+                    "soma",
+                    [
+                        {
+                            "var": "a"
+                        },
+                        {
+                            "var": "b"
+                        }
+                    ],
+                    {
+                        "op": "+",
+                        "args": [
+                            {
+                                "var": "a"
+                            },
+                            {
+                                "var": "b"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "funcao",
+                "args": [
+                    "soma2",
+                    [
+                        {
+                            "var": "c"
+                        }
+                    ],
+                    {
+                        "op": "seq",
+                        "args": [
+                            {
+                                "op": "atribuicao",
+                                "args": [
+                                    "c",
+                                    {
+                                        "op": "+",
+                                        "args": [
+                                            {
+                                                "var": "c"
+                                            },
+                                            {
+                                                "op": "int",
+                                                "args": [
+                                                    "1"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "op": "+",
+                                "args": [
+                                    {
+                                        "var": "c"
+                                    },
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "1"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "atribuicao",
+                "args": [
+                    "seis",
+                    {
+                        "op": "call_func",
+                        "args": [
+                            "soma",
+                            [
+                                {
+                                    "op": "int",
+                                    "args": [
+                                        "4"
+                                    ]
+                                },
+                                {
+                                    "op": "int",
+                                    "args": [
+                                        "2"
+                                    ]
+                                }
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "atribuicao",
+                "args": [
+                    "oito",
+                    {
+                        "op": "call_func",
+                        "args": [
+                            "soma2",
+                            [
+                                {
+                                    "var": "seis"
+                                }
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "lista2 = map( mais2, [ 1, 2, 3 ] );\n            lista3 = FOLD( soma, [ 1, 2, 3 ], 0 ); ": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "atribuicao",
+                "args": [
+                    "lista2",
+                    {
+                        "op": "map",
+                        "args": [
+                            "mais2",
+                            {
+                                "op": "elementos_array",
+                                "args": [
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "1"
+                                        ]
+                                    },
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "2"
+                                        ]
+                                    },
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "3"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "atribuicao",
+                "args": [
+                    "lista3",
+                    {
+                        "op": "fold",
+                        "args": [
+                            "soma",
+                            {
+                                "op": "elementos_array",
+                                "args": [
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "1"
+                                        ]
+                                    },
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "2"
+                                        ]
+                                    },
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "3"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "op": "int",
+                                "args": [
+                                    "0"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "valor1 = 20;\nvalor2 = 20;\nSE valor1 <= valor2 && 1 == 1:\n    ESCREVER(\"Menor\");\nSENAO:\n    ESCREVER(\"Maior ou igual\");\nFIM": {
+        "op": "seq",
+        "args": [
+            {
+                "op": "atribuicao",
+                "args": [
+                    "valor1",
+                    {
+                        "op": "int",
+                        "args": [
+                            "20"
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "atribuicao",
+                "args": [
+                    "valor2",
+                    {
+                        "op": "int",
+                        "args": [
+                            "20"
+                        ]
+                    }
+                ]
+            },
+            {
+                "op": "se",
+                "args": [
+                    {
+                        "op": "&&",
+                        "args": [
+                            {
+                                "op": "<=",
+                                "args": [
+                                    {
+                                        "var": "valor1"
+                                    },
+                                    {
+                                        "var": "valor2"
+                                    }
+                                ]
+                            },
+                            {
+                                "op": "==",
+                                "args": [
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "1"
+                                        ]
+                                    },
+                                    {
+                                        "op": "int",
+                                        "args": [
+                                            "1"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "op": "seq",
+                        "args": [
+                            {
+                                "op": "escrever",
+                                "args": [
+                                    {
+                                        "op": "string",
+                                        "args": [
+                                            "Menor"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "op": "senao",
+                        "args": [
+                            {
+                                "op": "seq",
+                                "args": [
+                                    {
+                                        "op": "escrever",
+                                        "args": [
+                                            {
+                                                "op": "string",
+                                                "args": [
+                                                    "Maior ou igual"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
